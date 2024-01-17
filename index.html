@@ -1,0 +1,42 @@
+<!-- Deklarasi tipe dan bahasa dokumen HTML -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Pengaturan karakter set dan viewport untuk responsivitas -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Judul halaman -->
+    <title>Kalkulator Persegi</title>
+
+    <!-- Menghubungkan file eksternal CSS untuk styling -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Bagian Header dengan judul kalkulator dan informasi proyek -->
+    <header>
+        <h1>Kalkulator</h1>
+        <h4>Mini Project Revo-U - Dwiki Agung Witriantino</h4>
+    </header>
+
+    <!-- Konten Kalkulator -->
+    <div id="calculator">
+        <!-- Label dan input untuk memasukkan panjang sisi persegi -->
+        <label for="sideLength">Luas dan Keliling Persegi</label>
+        <input type="text" id="sideLength" placeholder="Masukkan panjang sisi" oninput="validateInput(this)">
+
+        <!-- Tombol untuk menghitung dan mereset kalkulator -->
+        <button onclick="calculate()">Hitung</button>
+        <button onclick="resetForm()">Reset</button>
+
+        <!-- Area untuk menampilkan hasil perhitungan -->
+        <div id="result"></div>
+    </div>
+
+    <!-- Menghubungkan file eksternal JavaScript untuk logika kalkulator -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

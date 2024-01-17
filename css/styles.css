@@ -1,0 +1,83 @@
+/* Pengaturan dasar untuk seluruh halaman */
+body {
+    font-family: Arial, sans-serif; /* Menggunakan font Arial atau fallback sans-serif */
+    display: flex; /* Menggunakan model tata letak fleksibel */
+    align-items: center; /* Memusatkan elemen secara vertikal */
+    justify-content: center; /* Memusatkan elemen secara horizontal */
+    height: 100vh; /* Tinggi halaman 100% dari viewport */
+    margin: 0; /* Menghapus margin default pada body */
+    background-color: #f5f5f5; /* Warna latar belakang halaman */
+}
+
+/* Pengaturan untuk header */
+header {
+    text-align: center; /* Teks rata tengah di dalam header */
+    padding: 10px; /* Ruang dalam di dalam header */
+    background-color: #333; /* Warna latar belakang header */
+    color: #fff; /* Warna teks header */
+    border-radius: 8px 8px 0 0; /* Border radius untuk sudut header */
+    width: 100%; /* Lebar header 100% dari lebar viewport */
+    position: fixed; /* Header bersifat statis di bagian atas */
+    top: 0; /* Menempatkan header di bagian atas viewport */
+}
+
+/* Pengaturan untuk kalkulator */
+#calculator {
+    text-align: center; /* Teks rata tengah di dalam kalkulator */
+    padding: 20px; /* Ruang dalam di dalam kalkulator */
+    border-radius: 8px; /* Border radius untuk sudut kalkulator */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Efek bayangan untuk kalkulator */
+    background-color: #fff; /* Warna latar belakang kalkulator */
+    max-width: 400px; /* Lebar maksimum kalkulator */
+    width: 100%; /* Lebar kalkulator 100% dari lebar viewport */
+    box-sizing: border-box; /* Box sizing untuk menghitung padding dan border dalam total lebar elemen */
+    margin-top: 60px; /* Menghindari tumpang tindih dengan header */
+}
+
+/* Pengaturan untuk label */
+label {
+    font-size: 18px; /* Ukuran font label */
+    margin-bottom: 10px; /* Jarak antara label dan elemen berikutnya */
+}
+
+/* Pengaturan untuk input */
+input {
+    padding: 10px; /* Padding pada elemen input */
+    font-size: 16px; /* Ukuran font input */
+    width: 100%; /* Lebar input 100% dari lebar parent */
+    box-sizing: border-box; /* Box sizing untuk menghitung padding dan border dalam total lebar elemen */
+    margin-bottom: 15px; /* Jarak antara input dan elemen berikutnya */
+}
+
+/* Pengaturan untuk tombol */
+button {
+    padding: 10px 20px; /* Padding pada tombol */
+    font-size: 16px; /* Ukuran font tombol */
+    background-color: #4caf50; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    border: none; /* Tidak ada border pada tombol */
+    border-radius: 4px; /* Border radius untuk sudut tombol */
+    cursor: pointer; /* Menunjukkan kursor tangan saat mengarah ke tombol */
+}
+
+/* Efek hover pada tombol */
+button:hover {
+    background-color: #45a049; /* Warna latar belakang tombol saat dihover */
+}
+
+/* Pengaturan untuk hasil */
+#result {
+    margin-top: 20px; /* Jarak antara hasil dan elemen di atasnya */
+    font-size: 18px; /* Ukuran font hasil */
+}
+
+/* Aturan media query untuk responsivitas pada layar kecil */
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 10px; /* Padding halaman saat lebar layar kecil */
+    }
+
+    #calculator {
+        max-width: none; /* Menghapus batas lebar maksimum pada kalkulator saat layar kecil */
+    }
+}
